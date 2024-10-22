@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Claptrap.cpp                                       :+:      :+:    :+:   */
+/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 22:16:27 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/10/19 22:36:34 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/10/22 19:23:29 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ ClapTrap::~ClapTrap() {
     std::cout << "ClapTrap destructor called for " << _name << std::endl;
 }
 
-// Función de ataque
 void ClapTrap::attack(const std::string& target) {
     if (_hitPoints > 0 && _energyPoints > 0) {
         std::cout << "ClapTrap " << _name << " attacks " << target << ", causing " << _attackDamage << " points of damage!" << std::endl;
@@ -50,7 +49,6 @@ void ClapTrap::attack(const std::string& target) {
     }
 }
 
-// Función para recibir daño
 void ClapTrap::takeDamage(unsigned int amount) {
     _hitPoints -= amount;
     if (_hitPoints < 0) {
@@ -59,7 +57,6 @@ void ClapTrap::takeDamage(unsigned int amount) {
     std::cout << "ClapTrap " << _name << " takes " << amount << " points of damage! Now has " << _hitPoints << " hit points." << std::endl;
 }
 
-// Función para reparar
 void ClapTrap::beRepaired(unsigned int amount) {
     if (_hitPoints > 0 && _energyPoints > 0) {
         _hitPoints += amount;

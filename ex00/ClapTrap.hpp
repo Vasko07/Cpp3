@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 22:16:30 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/10/19 22:18:08 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/10/22 19:00:35 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,9 @@ public:
     ClapTrap();
     ClapTrap(const std::string& name);
     ClapTrap(const ClapTrap& other);
-    
-    // Operador de asignación
     ClapTrap& operator=(const ClapTrap& other);
-
     ~ClapTrap();
     
-  
     void attack(const std::string& target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
