@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:23:31 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/10/22 20:01:41 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:32:19 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
 	 ScavTrap(const std::string &name);
 	 ScavTrap(const ScavTrap &other);
 	 ScavTrap& operator=(const ScavTrap &other);
-	~ ScavTrap();
+	~ScavTrap();
 
 	void attack(const std::string &target);
 	void guardGate();
